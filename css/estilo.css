@@ -1,0 +1,23 @@
+body {
+    background-image: url(../Imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+.lienzo {
+    background-color: white;
+}
+
+#canvas {
+    margin-left: -16px;
+    width: 760px;
+}

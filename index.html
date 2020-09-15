@@ -1,0 +1,97 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    <title>Entregable 1</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 border">
+                <h2>Herramientas & filtros</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-primary btn-block " id="lapiz">
+                            <img src="Imagenes/pencil.png" alt="">
+                        </button>
+                        <button type="button" class="btn btn-secudnary btn-block " id="blancoynegro">
+                            B&N
+                        </button>
+                        <button type="button" class="btn btn-secudnary btn-block" id="deteccionbordes">
+                            Bordes
+                        </button>
+                        <button type="button" class="btn btn-secudnary btn-block" id="blur">
+                            Blur
+                        </button>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-primary btn-block" id="goma">
+                            <img src="Imagenes/erase.png" alt="">
+                        </button>
+                        <button type="button" class="btn btn-secudnary btn-block" id="sepia">
+                            Sepia
+                        </button>
+                        <button type="button" class="btn btn-secudnary btn-block" id="invertido">
+                            Invert
+                        </button>
+                        <button type="button" class="btn btn-secudnary btn-block" id="binario">
+                            Binario
+                        </button>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-secudnary btn-block" id="saturacion">
+                            Sutarado <label id="demo"></label>
+
+                        </button>
+                        <input class="input-group" type="range" id="valor" default="1" min="1" max="10" step="1">
+                    </div>
+                </div>
+
+                <div class=r ow>
+                    <div class="col">
+                        <button type="button" class="btn btn-success btn-block" id="nuevo"> Hoja en blanco </button>
+                    </div>
+                </div>
+                <div class=r ow>
+                    <div class="col">
+                        <button type="button" class="btn btn-success btn-block" id="dowload"> Descargar Imagen
+                        </button>
+                    </div>
+                </div>
+                <div class=r ow>
+                    <div class="col">
+                        <input type="file" id="file-input">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-8 border lienzo">
+                <canvas id="canvas" width="760" height="800" class="img-rounded"></canvas>
+            </div>
+            <div class="col-md-1 border">
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="js/main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
